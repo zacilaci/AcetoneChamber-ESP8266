@@ -1,0 +1,80 @@
+[
+  {
+    "title": "Home",
+    "uri": "/",
+    "menu": true,
+    "element": [
+      {
+        "name": "header",
+        "type": "ACText",
+        "value": "<h2>Acetone chamber settings</h2>"
+      },
+      {
+        "name": "fanSpeed",
+        "type": "ACRange",
+        "label": "Fan Speed",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "magnify": "behind"
+      },
+      {
+        "name": "temperature",
+        "type": "ACRange",
+        "label": "Temperature",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "magnify": "behind"
+      },
+      {
+        "name": "timeOnText",
+        "type": "ACText",
+        "value": "<h3>Time On [min]:</h3>"
+      },
+      {
+        "name": "timeOn",
+        "type": "ACInput",
+        "placeholder": "Input an amount of time in minutes, to keep the set temperature.",
+        "apply": "number"
+      },
+      {
+        "name": "timeOffText",
+        "type": "ACText",
+        "value": "<h3>Time Off [min]:</h3>"
+      },
+      {
+        "name": "timeOff",
+        "type": "ACInput",
+        "placeholder": "Input an amount of time in minutes, to turn off the heating for the amount of time, then reheat to the previously set temperature.",
+        "apply": "number"
+      },
+      {
+        "name": "numberOfCyclesText",
+        "type": "ACText",
+        "value": "<h3>Cycles:</h3>"
+      },
+      {
+        "name": "cycles",
+        "type": "ACInput",
+        "placeholder": "The number of times to repeat the cycle.",
+        "apply": "number"
+      },
+      {
+        "name": "fanOff",
+        "type": "ACCheckbox",
+        "label": "Fan off during non-heating periods."
+      },
+      {
+        "name": "save",
+        "type": "ACButton",
+        "value": "Save"
+      },
+      {
+        "name": "start",
+        "type": "ACButton",
+        "value": "Start"
+      }
+    ]
+  }
+]

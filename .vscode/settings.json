@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "*.oldcpp": "cpp",
+    "*.tcc": "cpp",
+    "string": "cpp"
+  }
+}
